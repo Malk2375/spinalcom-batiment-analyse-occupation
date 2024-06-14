@@ -9,25 +9,25 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
-import FloorView from './FloorView.vue';
+import { mapState, mapActions } from "vuex";
+import FloorView from "./FloorView.vue";
 
 export default {
-  name: 'BuildingView',
+  name: "BuildingView",
   components: {
-    FloorView
+    FloorView,
   },
   computed: {
     ...mapState({
-      buildings: state => state.buildings.children || []
-    })
+      buildings: (state) => state.buildings.children || [],
+    }),
   },
   created() {
     this.fetchBuildings();
   },
   methods: {
-    ...mapActions(['fetchBuildings'])
-  }
+    ...mapActions(["fetchBuildings"]),
+  },
 };
 </script>
 <style>

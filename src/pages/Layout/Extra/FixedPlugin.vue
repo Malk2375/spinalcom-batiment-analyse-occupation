@@ -41,9 +41,9 @@ import "vue-github-buttons/dist/vue-github-buttons.css";
 // Vue.use(SocialSharing);
 Vue.use(VueGitHubButtons, { useCache: true });
 export default {
-  components: { 
+  components: {
     // SocialSharing
-    },
+  },
   data() {
     return {
       documentationLink:
@@ -63,7 +63,10 @@ export default {
         { image: require("@/assets/img/Batiment1.jpg"), active: false },
         { image: require("@/assets/img/Batiment2.jpg"), active: true },
         { image: require("@/assets/img/Escalator.jpg"), active: false },
-        { image: require("@/assets/img/main_numerique_page_equipe-1.png"), active: false },
+        {
+          image: require("@/assets/img/main_numerique_page_equipe-1.png"),
+          active: false,
+        },
       ],
     };
   },

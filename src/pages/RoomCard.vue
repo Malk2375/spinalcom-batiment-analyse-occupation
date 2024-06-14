@@ -2,44 +2,47 @@
   <div class="room-card">
     <h4>Pièce n° {{ roomIndex + 1 }} : {{ room.name }}</h4>
     <p class="occupation">
-      Occupation : <span :class="getOccupationClass">{{ getRoomOccupation }}</span>
+      Occupation :
+      <span :class="getOccupationClass">{{ getRoomOccupation }}</span>
     </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'RoomCard',
+  name: "RoomCard",
   props: {
     room: {
       type: Object,
-      required: true
+      required: true,
     },
     roomDetails: {
       type: Object,
-      required: true
+      required: true,
     },
     roomIndex: {
       type: Number,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     getRoomOccupation() {
       if (!this.roomDetails || this.roomDetails.occupation === undefined) {
-        return 'INDÉFINIE';
+        return "INDÉFINIE";
       } else {
-        return this.roomDetails.occupation ? 'Occupée' : 'Non Occupée';
+        return this.roomDetails.occupation ? "Occupée" : "Non Occupée";
       }
     },
     getOccupationClass() {
       if (!this.roomDetails || this.roomDetails.occupation === undefined) {
-        return 'undefined-occupation';
+        return "undefined-occupation";
       } else {
-        return this.roomDetails.occupation ? 'true-occupation' : 'false-occupation';
+        return this.roomDetails.occupation
+          ? "true-occupation"
+          : "false-occupation";
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

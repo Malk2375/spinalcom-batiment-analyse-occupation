@@ -11,18 +11,18 @@
 
 <script>
 export default {
-  name: 'StatsCard',
+  name: "StatsCard",
   props: {
     dataBackgroundColor: {
       type: String,
-      default: ''
-    }
+      default: "",
+    },
   },
   methods: {
     handleClick() {
-      this.$emit('click');
-    }
-  }
+      this.$emit("click");
+    },
+  },
 };
 </script>
 

@@ -4,57 +4,60 @@
     <div v-for="(room, index) in rooms" :key="room.dynamicId" class="room-card">
       <div class="PieceHeader">
         <h4>Pièce n° {{ index + 1 }} : {{ room.name }}</h4>
-        <h4>{{room.dynamicId}}</h4>
+        <h4>{{ room.dynamicId }}</h4>
       </div>
       <p class="occupation">
-        Occupation : <span :class="getOccupationClass(room.dynamicId)">{{ getRoomOccupation(room.dynamicId) }}</span>
+        Occupation :
+        <span :class="getOccupationClass(room.dynamicId)">{{
+          getRoomOccupation(room.dynamicId)
+        }}</span>
       </p>
     </div>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex';
+import { mapGetters, mapActions } from "vuex";
 
 export default {
-  name: 'RoomView',
+  name: "RoomView",
   props: {
     rooms: {
       type: Array,
       required: true,
-      default: () => []
-    }
+      default: () => [],
+    },
   },
   computed: {
-    ...mapGetters(['getRoomDetails']),
+    ...mapGetters(["getRoomDetails"]),
   },
   methods: {
-    ...mapActions(['fetchRoomDetails']),
+    ...mapActions(["fetchRoomDetails"]),
     getRoomOccupation(roomId) {
       const details = this.getRoomDetails(roomId);
       if (!details || details.occupation === undefined) {
-        return 'INDÉFINIE';
+        return "INDÉFINIE";
       } else {
-        return details.occupation ? 'Occupée' : 'Non Occupée';
+        return details.occupation ? "Occupée" : "Non Occupée";
       }
     },
     getOccupationClass(roomId) {
       const details = this.getRoomDetails(roomId);
       if (!details || details.occupation === undefined) {
-        return 'undefined-occupation';
+        return "undefined-occupation";
       } else {
-        return details.occupation ? 'true-occupation' : 'false-occupation';
+        return details.occupation ? "true-occupation" : "false-occupation";
       }
-    }
+    },
   },
   watch: {
     rooms: {
       immediate: true,
       handler(newRooms) {
-        newRooms.forEach(room => this.fetchRoomDetails(room.dynamicId));
-      }
-    }
-  }
+        newRooms.forEach((room) => this.fetchRoomDetails(room.dynamicId));
+      },
+    },
+  },
 };
 </script>
 
@@ -100,7 +103,7 @@ export default {
 .undefined-occupation {
   color: grey;
 }
-.PieceHeader{
+.PieceHeader {
   display: flex;
   justify-content: space-around;
 }

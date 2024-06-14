@@ -8,6 +8,6 @@ export async function fetchRoomDetailsFromAPI(roomId) {
   }
   const data = await response.json();
   return {
-    endpoints: data.endpoints
+    endpoints: data.endpoints,
   };
 }

@@ -4,10 +4,17 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/mohamed-abdelmalek-dorbani/" target="_blank"> LinkedIn </a>
+            <a
+              href="https://www.linkedin.com/in/mohamed-abdelmalek-dorbani/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </li>
           <li>
-            <a href="https://portfolio-malk.vercel.app/" target="_blank"> Portfolio </a>
+            <a href="https://portfolio-malk.vercel.app/" target="_blank">
+              Portfolio
+            </a>
           </li>
           <li>
             <a href="https://github.com/Malk2375" target="_blank"> Github </a>
@@ -16,8 +23,8 @@
       </nav>
       <div class="copyright text-center">
         &copy; {{ new Date().getFullYear() }}
-        <a href="https://portfolio-malk.vercel.app/" target="_blank"> Malk </a>, Developpé pour SpinalCom <i
-          class="fa fa-heart heart"></i>
+        <a href="https://portfolio-malk.vercel.app/" target="_blank"> Malk </a>,
+        Developpé pour SpinalCom <i class="fa fa-heart heart"></i>
       </div>
     </div>
   </footer>

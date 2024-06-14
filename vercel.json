@@ -2,14 +2,30 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/**", 
+      "src": "dist/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
+      "src": "/(.*\\.css)", 
+      "dest": "/dist/$1"
+    },
+    {
+      "src": "/(.*\\.js)", 
+      "dest": "/dist/$1"
+    },
+    {
+      "src": "/(.*\\.(jpg|png|svg))",
+      "dest": "/dist/$1"
+    },
+    {
+      "src": "/(favicon\\.png)", 
+      "dest": "/dist/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/dist/index.html"
     }
   ]
 }

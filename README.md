@@ -10,7 +10,6 @@ Cette application affiche l'occupation des pièces d'un bâtiment, classée par 
 - [Utilisation](#utilisation)
 - [Endpoints API](#endpoints-api)
 - [Choix de Conception](#choix-de-conception)
-- [Licence](#licence)
 
 ## Fonctionnalités
 - Affichage du statut d'occupation pour chaque pièce.

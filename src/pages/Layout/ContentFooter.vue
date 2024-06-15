@@ -14,7 +14,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/Malk2375/spinalcom-batiment-analyse-occupation" target="_blank"> Github Repo </a>
+            <a href="https://github.com/Malk2375/spinalcom-batiment-analyse-occupation" target="_blank"> Dépot Github </a>
           </li>
         </ul>
       </nav>

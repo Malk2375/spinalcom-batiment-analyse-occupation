@@ -1,8 +1,8 @@
 # Application d'Occupation des Pièces d'un Bâtiment
 
-Vous pouvez consulter l'application en ligne via ce lien : [Application d'Occupation des Pièces d'un Bâtiment Développé par DORBANI](https://spinalcom-batiment-analyse-occupation.vercel.app/)
+## Vous pouvez consulter l'application en ligne via ce lien : [Application d'Occupation des Pièces d'un Bâtiment Développé par DORBANI](https://spinalcom-batiment-analyse-occupation.vercel.app/)
 
-Cette application affiche l'occupation des pièces d'un bâtiment, classée par étage. Le statut d'occupation peut être TRUE (occupée), FALSE (non occupée) ou UNDEFINED (inconnu). L'application est développée avec Vue.js version 2.x.x et interagit avec l'API SpinalCom pour récupérer les données des pièces.
+Cette application affiche l'occupation des pièces d'un bâtiment, classée par étage. Le statut d'occupation peut être TRUE (occupée), FALSE (non occupée) ou UNDEFINED (inconnu). L'application est développée avec Vue.js version 2.7.14 et interagit avec l'API SpinalCom pour récupérer les données des pièces.
 
 ## Table des matières
 - [Fonctionnalités](#fonctionnalités)

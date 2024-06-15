@@ -4,10 +4,7 @@
       <nav>
         <ul>
           <li>
-            <a
-              href="https://www.linkedin.com/in/mohamed-abdelmalek-dorbani/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/mohamed-abdelmalek-dorbani/" target="_blank">
               LinkedIn
             </a>
           </li>
@@ -17,7 +14,7 @@
             </a>
           </li>
           <li>
-            <a href="https://github.com/Malk2375" target="_blank"> Github </a>
+            <a href="https://github.com/Malk2375/spinalcom-batiment-analyse-occupation" target="_blank"> Github Repo </a>
           </li>
         </ul>
       </nav>
